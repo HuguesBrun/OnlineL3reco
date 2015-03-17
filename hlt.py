@@ -5353,7 +5353,7 @@ process.options = cms.untracked.PSet(
 # override the GlobalTag, connection string and pfnPrefix
 if 'GlobalTag' in process.__dict__:
     from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag as customiseGlobalTag
-    process.GlobalTag = customiseGlobalTag(process.GlobalTag, globaltag = 'GR_H_V44')#'auto:hltonline_2014')
+    process.GlobalTag = customiseGlobalTag(process.GlobalTag, globaltag = 'GR_H_V45_X1')#'auto:hltonline_2014')
     process.GlobalTag.connect   = 'frontier://FrontierProd/CMS_CONDITIONS'
     process.GlobalTag.pfnPrefix = cms.untracked.string('frontier://FrontierProd/')
     for pset in process.GlobalTag.toGet.value():
